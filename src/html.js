@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import * as PropTypes from "prop-types"
+import React, { Component } from 'react'
+import * as PropTypes from 'prop-types'
 
 const propTypes = {
   headComponents: PropTypes.node.isRequired,

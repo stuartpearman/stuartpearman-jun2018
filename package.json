@@ -5,17 +5,26 @@
   "version": "1.0.0",
   "author": "Scotty Eckenthal <scott.eckenthal@gmail.com>",
   "dependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.9.1",
     "gatsby": "latest",
     "gatsby-link": "latest",
+    "gatsby-plugin-sass": "^1.0.26",
+    "prettier": "^1.13.5",
     "react-redux": "5.0.5",
     "redux": "3.6.0"
   },
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {
+    "format": "prettier --trailing-comma es5 --single-quote --no-semi --write \"**/*.js\"",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "lint": "eslint \"src/**/*.js\" && echo \"👍  Passed linting\n\"",
+    "tunnel": "ngrok http 8000"
   }
 }
