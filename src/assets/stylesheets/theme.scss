@@ -1,7 +1,8 @@
 body {
   font-size: 18px;
-  font-family: avenir, sans-serif;
+  font-family: $base-font;
   margin: 0;
+  line-height: 1.8;
 }
 
 a, a:link, a:visited {
@@ -9,12 +10,42 @@ a, a:link, a:visited {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   color: $headings-color;
+  font-family: $headings-font;
+  font-weight: bold;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.125em; }
+h6 { font-size: 1em; }
+
+p, ul, pre, blockquote { margin: 1em 0; }
+
+p { max-width: 45em; }
+
+hr {
+  margin: 1em 0;
+  border: none;
+  border-bottom: $light-border;
+}
+
+blockquote {
+  border-left: 7px solid rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  font-size: 1.25em;
+  color: #888;
+  background: #fefef8;
+  margin: 1.1em 0;
 }
 
 button {
-  background: lighten($button-color, 10%);
+  background: $button-color;
   padding: 10px 15px;
   color: #fff;
   border: 0;
@@ -24,4 +55,10 @@ button {
   cursor: pointer;
 
   &:focus { outline: none; }
+}
+
+pre {
+  background: $background-tint;
+  padding: 30px 40px;
+  font-family: $mono-font;
 }

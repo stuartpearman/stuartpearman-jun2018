@@ -8,7 +8,7 @@ const Navigation = props => (
   <nav className="nav">
     <ul className="nav-items">
       <NavItem dest="/">Home</NavItem>
-      <NavItem dest="/about/">About us</NavItem>
+      <NavItem dest="/Styleguide/">Styleguide</NavItem>
       <NavItem dest="/count/">Redux Example</NavItem>
     </ul>
   </nav>

@@ -1,6 +1,13 @@
+$mono-font: 'Courier New', monospace;
+$base-font: 'Avenir', sans-serif;
+$headings-font: 'Avenir', serif;
+
 $nav-line-height: 50px;
 
-$link-color: #ab1273;
+$light-border: 1px solid #ddd;
+
+$link-color: #9c703a;
 $med-gray: #555;
 $headings-color: #555;
-$button-color: darken($link-color, 10%);
+$button-color: #af8149;
+$background-tint: #fcfaf7;
