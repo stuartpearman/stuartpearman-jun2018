@@ -25,6 +25,19 @@ h4 { font-size: 1.25em; }
 h5 { font-size: 1.125em; }
 h6 { font-size: 1em; }
 
+// REVISIT - section scope too broad?
+section {
+  padding: 30px 0;
+
+  // * too broad?
+  > *:first-child {
+      margin-top: 0;
+  }
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 p, ul, pre, blockquote { margin: 1em 0; }
 
 p { max-width: 45em; }

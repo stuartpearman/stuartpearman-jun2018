@@ -1,12 +1,18 @@
 import React from "react";
+import Link from "gatsby-link";
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    <article className="post">
+      <section className="post-body">
+        <h1>{post.frontmatter.title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      </section>
+      <footer className="post-footer">
+        <Link to="/blog">Back to blog</Link>
+      </footer>
+    </article>
   );
 };
 

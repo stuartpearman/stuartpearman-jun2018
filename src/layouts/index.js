@@ -12,11 +12,13 @@ class DefaultLayout extends React.Component {
       <div className="container">
         <header className="site-header">
           <Link to="/" className="site-header-brand">
-            <h2>Welcome!</h2>
+            <h2>Stuart Pearman</h2>
           </Link>
           <Navigation />
         </header>
-        {this.props.children()}
+        <main>
+          {this.props.children()}
+        </main>
       </div>
     )
   }

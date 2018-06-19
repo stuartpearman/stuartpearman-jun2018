@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
+import { increment as incrementCount } from '../state/actions/count'
+
 const Counter = ({ count, increment }) => (
   <div>
     <p>Count: {count}</p>
@@ -19,7 +21,7 @@ const mapStateToProps = ({ count }) => {
 }
 
 const mapDispatchToProps = dispatch => {
-  return { increment: () => dispatch({ type: `INCREMENT` }) }
+  return { increment: () => dispatch(incrementCount()) }
 }
 
 export default connect(
