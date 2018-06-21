@@ -3,6 +3,12 @@ import React from 'react'
 const Styleguide = () => (
   <article>
     <section>
+      <div className="styleguide-color styleguide-color-1"></div>
+      <div className="styleguide-color styleguide-color-2"></div>
+      <div className="styleguide-color styleguide-color-3"></div>
+      <div className="styleguide-color styleguide-color-4"></div>
+    </section>
+    <section>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
       <h3>Heading 3</h3>

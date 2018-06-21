@@ -2,40 +2,82 @@
 
 .site-header {
   padding: 30px 0 10px;
-  border-bottom: $light-border;
+  float: left;
+  width: 320px;
+  position: fixed;
 }
 
 .site-header-brand,
 .site-header-brand:link,
 .site-header-brand:visited {
-  color: $headings-color;
-  display: inline-block;
+  // color: $headings-color;
+  display: block;
+  // background: $brand1;
+  padding: $nav-link-padding;
+  background: none;
+  transition: background 0.1s;
+  text-decoration: none;
 
   h2 {
     margin: 0;
-    line-height: $nav-line-height;
+    line-height: 72px;
+    font-size: 2.25em;
+    // font-family: $base-font;
+    // color: #fff;
   }
+
+  &:after {
+    background: transparent;
+  }
+}
+
+.site-header-brand:hover {
+  // background: lighten($hover-color, 4%);
+  &:after {
+    background: lighten($brand6-1, 4%);
+  }
+}
+
+.site-main {
+  float: right;
+  width: 62%;
+  position: relative;
+  z-index: 5;
 }
 
 // NAV
 
 .nav {
-  display: inline-block;
-  float: right;
 }
 
 .nav-items {
   margin: 0;
+  padding: 15px 0;
+  list-style: none;
 }
 
 .nav-item {
-  display: inline-block;
+  margin-bottom: 10px;
 }
 
-.nav-link {
-  display: inline-block;
-  padding: 0 15px;
-  line-height: $nav-line-height;
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  transition: background 0.1s;
+  display: block;
+  font-size: 1.75em;
+  color: rgba(0,0,0,0.55);
+  background: none;
+  padding: $nav-link-padding;
+  font-family: $headings-font;
+  text-decoration: none;
+  &:after {
+    background: transparent;
+  }
+}
+
+.nav-link:hover:after {
+  background: lighten($brand6-1, 4%);
 }
 
 // HERO
@@ -44,7 +86,6 @@
   font-size: 1.25em;
   color: #777;
   border-bottom: 1px dashed #ccc;
-  // background: #f9f9f9;
 
   p {
     margin-top: 0;
