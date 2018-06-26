@@ -3,10 +3,9 @@ import reducers from './reducers'
 
 const initialState = {
   count: 0,
-  // navigation: {
-  //   isOpen: false,
-  //   current: '/',
-  // }
+  navigation: {
+    isOpen: false
+  }
 }
 
 const createStore = () => reduxCreateStore(reducers, initialState)
