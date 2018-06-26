@@ -25,6 +25,7 @@ a, a:link, a:visited {
   border-bottom: 3px solid transparent;
   transition: all 0.2s;
   position: relative;
+  white-space: nowrap;
 }
 
 a:after {
@@ -32,6 +33,8 @@ a:after {
   background: #cce1ff;
   background: #dad6ff;
   background: #eed6ff;
+  background: #c2f0cc;
+  background: #def7e4; // slightly lighter than above
   width: 100%;
   height: 100%;
   content: "";
@@ -45,7 +48,7 @@ a:hover:after {
   left: -3%;
   width: 106%;
   background: #dad6ff;
-  background: #cce1ff;
+  background: #d1e2fa;
   // background: #c7ffe3;
   height: 103%;
   bottom: -1%;
@@ -103,6 +106,7 @@ blockquote {
 
 button {
   background: darken($brand6-1, 8%);
+  background: #d0e2fb;
   padding: 10px 15px;
   color: rgba(0,0,0,0.75);
   border: 0;
