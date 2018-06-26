@@ -30,6 +30,8 @@ a, a:link, a:visited {
 a:after {
   position: absolute;
   background: #cce1ff;
+  background: #dad6ff;
+  background: #eed6ff;
   width: 100%;
   height: 100%;
   content: "";
@@ -43,6 +45,7 @@ a:hover:after {
   left: -3%;
   width: 106%;
   background: #dad6ff;
+  background: #cce1ff;
   // background: #c7ffe3;
   height: 103%;
   bottom: -1%;

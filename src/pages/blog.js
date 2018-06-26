@@ -1,8 +1,8 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react'
+import Link from 'gatsby-link'
 
 export default ({ data }) => {
-  const nodes = data.allMarkdownRemark.edges.map(edge => edge.node);
+  const nodes = data.allMarkdownRemark.edges.map(edge => edge.node)
 
   const posts = nodes.map(post => (
     <article key={post.fields.slug} className="blog-post">
@@ -14,7 +14,7 @@ export default ({ data }) => {
   ))
 
   return <section className="blog-feed">{posts}</section>
-};
+}
 
 export const query = graphql`
   query BlogPageQuery {
@@ -22,10 +22,14 @@ export const query = graphql`
       edges {
         node {
           html
-          frontmatter { title }
-          fields { slug }
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
         }
       }
     }
   }
-`;
+`

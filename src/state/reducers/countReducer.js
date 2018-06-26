@@ -1,11 +1,11 @@
-import { INCREMENT } from '../actions/types';
+import { INCREMENT } from '../actions/types'
 
 const countReducer = (state = 0, action) => {
   switch (action.type) {
     case INCREMENT:
-      return state + 1;
+      return state + 1
     default:
-      return state;
+      return state
   }
 }
 

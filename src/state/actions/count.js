@@ -1,3 +1,3 @@
-import { INCREMENT } from './types';
+import { INCREMENT } from './types'
 
 export const increment = () => ({ type: INCREMENT })

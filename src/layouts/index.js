@@ -16,9 +16,7 @@ class DefaultLayout extends React.Component {
           </Link>
           <Navigation />
         </header>
-        <main className="site-main">
-          {this.props.children()}
-        </main>
+        <main className="site-main">{this.props.children()}</main>
       </div>
     )
   }
