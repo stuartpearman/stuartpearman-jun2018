@@ -1,21 +1,35 @@
 .nav {
   @media (max-width: $screen-sm) {
     position: fixed;
-    left: 120vw;
+    left: 100vw;
+    // left: 0;
     top: 0;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(#e4f5fc, #ddffe6);
+    // background: linear-gradient(#e4f5fc, #dbffde);
+    // background: linear-gradient(#d1eef5, #dbffde);
+    background: linear-gradient(#d1eef5, #dbe9ff);
+    background: linear-gradient(#d1eef5, #dbe9ff);
+    background: linear-gradient(#d1eef5, #dfffdb);
+    background: linear-gradient(#d1eef5, #fffcdb);
+    visibility: hidden;
+    opacity: 0;
     z-index: 10;
-    transition: left 0.4s;
 
     &[data-is-open=true] {
+      transition: opacity 0.4s ease 0.1s, visibility 0s linear 0s, left 0.4s ease-out;
+      visibility: visible;
+      opacity: 1;
       left: 0;
+    }
+
+    &[data-is-open=false] {
+      transition: opacity 0.4s, visibility 0s linear 0.4s, left 0.8s ease-in;
     }
   }
 
   @media (min-width: $screen-sm) {
-    color: rgba(0,0,0,0.55);
+    color: rgba(0,0,0,0.9);
   }
 }
 
@@ -25,12 +39,15 @@
   padding: 20px 0 0;
 
   @media (min-width: $screen-sm) {
-    padding: 15px 0;
+    padding: 30px 0;
+    width: 320px;
+    margin: 0 auto;
   }
 }
 
 .nav-item {
   margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 .nav-link,
@@ -54,10 +71,20 @@
   }
 }
 
+.nav-link:hover {
+  // text-decoration: underline;
+  @media (min-width: $screen-sm) {
+    border-left: 10px solid rgba(0,0,0,0.5);
+    margin-left: -10px;
+  }
+}
+
 .nav-link:hover:after {
   background: rgba(0,50,100,0.07);
+
   @media (min-width: $screen-sm) {
     background: lighten($brand6-1, 4%);
+    background: rgba(255, 255, 255, 0);
   }
 }
 
@@ -68,14 +95,17 @@
 }
 
 .nav-links {
-  padding: 30px 15px;
+  padding: 30px 15px 5px;
   overflow: auto;
 }
 
 .nav-toggle {
+  background: #d1eef5;
   float: right;
   color: rgba(0,0,0,0.6);
   box-shadow: none;
+  margin-top: 2px;
+  line-height: 24px;
 }
 
 .nav-exit {
@@ -83,4 +113,18 @@
   border: 1px solid rgba(0,0,0,0.2);
   box-shadow: none;
   float: right;
+  line-height: 24px;
 }
+
+// .site-main {
+//   transition: all 0.4s;
+//   position: relative;
+//
+//   &[data-nav-is-open=false] {
+//     right: 0;
+//   }
+//
+//   &[data-nav-is-open=true] {
+//     right: 100vw;
+//   }
+// }

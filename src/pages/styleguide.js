@@ -39,7 +39,7 @@ const Styleguide = () => (
         mi try-hard bushwick authentic vexillologist meggings everyday carry
         green juice. La croix pitchfork thundercats selvage fixie tousled tote
         bag try-hard hoodie before they sold out 90's bicycle rights shaman.
-        Succulents kale chips PBR&B master cleanse humblebrag.
+        Succulents kale chips PBR&B Juice cleanse humblebrag.
       </p>
       <pre>var stu="pretty cool"; console.log(stu);</pre>
       <h3>More sections</h3>
@@ -71,7 +71,7 @@ const Styleguide = () => (
         mi try-hard bushwick authentic vexillologist meggings everyday carry
         green juice. La croix pitchfork thundercats selvage fixie tousled tote
         bag try-hard hoodie before they sold out 90's bicycle rights shaman.
-        Succulents kale chips PBR&B master cleanse humblebrag.
+        Succulents kale chips PBR&B Juice cleanse humblebrag.
       </p>
       <h4>Heading 4</h4>
       <p>
@@ -89,7 +89,7 @@ const Styleguide = () => (
         mi try-hard bushwick authentic vexillologist meggings everyday carry
         green juice. La croix pitchfork thundercats selvage fixie tousled tote
         bag try-hard hoodie before they sold out 90's bicycle rights shaman.
-        Succulents kale chips PBR&B master cleanse humblebrag.
+        Succulents kale chips PBR&B Juice cleanse humblebrag.
       </p>
     </section>
   </article>

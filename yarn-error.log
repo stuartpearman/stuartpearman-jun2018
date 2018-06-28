@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/stuartpearman/.nvm/versions/node/v8.11.1/bin/node /Users/stuartpearman/.nvm/versions/node/v8.11.1/bin/yarn develop
+  /Users/stuartpearman/.nvm/versions/node/v8.11.1/bin/node /Users/stuartpearman/.nvm/versions/node/v8.11.1/bin/yarn tunnel
 
 PATH: 
   /Users/stuartpearman/.nvm/versions/node/v8.11.1/bin:/Users/stuartpearman/.rbenv/shims:/Users/stuartpearman/Documents/lib/mongodb/bin:/Users/stuartpearman/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -9814,9 +9814,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 127
   Command: sh
-  Arguments: -c gatsby develop
+  Arguments: -c ngrok http 8000
   Directory: /Users/stuartpearman/Projects/personal-brand/stuartpearman-jun2018
   Output:
   

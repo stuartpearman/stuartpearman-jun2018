@@ -22,36 +22,39 @@ a, a:link, a:visited {
   color: rgba(0,0,0,0.7);
   font-weight: bold;
   // text-decoration: none;
-  border-bottom: 3px solid transparent;
-  transition: all 0.2s;
+  // border-bottom: 3px solid transparent;
+  // transition: all 0.1s;
   position: relative;
-  white-space: nowrap;
+  // white-space: nowrap;
+  background: #fff4cc;
 }
 
-a:after {
-  position: absolute;
-  background: #cce1ff;
-  background: #dad6ff;
-  background: #eed6ff;
-  background: #c2f0cc;
-  background: #def7e4; // slightly lighter than above
-  width: 100%;
-  height: 100%;
-  content: "";
-  left: 0;
-  bottom: 0;
-  z-index: -5;
-  transition: all 0.2s;
-}
+// a:after {
+//   display: inline;
+//   position: absolute;
+//   background: #cce1ff;
+//   background: #dad6ff;
+//   background: #eed6ff;
+//   background: #c2f0cc;
+//   background: #def7e4; // slightly lighter than above
+//   background: #fee9dd;
+//   width: 100%;
+//   height: 100%;
+//   content: "";
+//   left: 0;
+//   bottom: 0;
+//   z-index: -5;
+//   transition: all 0.2s;
+// }
 
-a:hover:after {
-  left: -3%;
-  width: 106%;
-  background: #dad6ff;
+a:hover {
+  // left: -3%;
+  // width: 106%;
+  // background: #dad6ff;
   background: #d1e2fa;
-  // background: #c7ffe3;
-  height: 103%;
-  bottom: -1%;
+  // // background: #c7ffe3;
+  // height: 103%;
+  // bottom: -1%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -129,6 +132,7 @@ pre {
   background: $background-tint;
   padding: 30px 40px;
   font-family: $mono-font;
+  overflow-x: scroll;
 }
 
 .styleguide-color {
@@ -142,4 +146,37 @@ pre {
 
 .styleguide-color-1 {
   background: #000;
+}
+
+.backdrop {
+  @media (min-width: $screen-sm) {
+      position: fixed;
+      width: calc(44% - 100px);
+      height: 100vh;
+      left: 0;
+      top: 0;
+      z-index: -2;
+  }
+}
+
+.backdrop:after {
+  @media (min-width: $screen-sm) {
+      content: "";
+      position: fixed;
+      width: calc(44% - 100px);
+      height: 100vh;
+      background: linear-gradient(50deg, #fff3c0, #f3feff);
+      background: linear-gradient(50deg, hsla(55, 100%, 92%, 1), hsla(200, 40%, 98%, 1));
+      background: linear-gradient(50deg, #ffefd6, #f8fbfc);
+      background: linear-gradient(50deg, #ffefd6, hsla(329, 40%, 98%, 1));
+      background: linear-gradient(50deg, #dddddd 0%, #ffffff); // black & white
+      background: linear-gradient(50deg, hsl(175, 70%, 88%) 0%, #fcfcf8); // light blue
+      background: linear-gradient(50deg, hsla(53, 100%, 83%, 1) 0%, #fcf8fa); // yellow
+      background: linear-gradient(50deg, #fff5a8 0%, hsla(0, 55%, 97%, 1)); // more saturation
+      // box-shadow: -10px 0px 15px -10px rgba(0,0,0,0.11) inset;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      opacity: 0.85;
+  }
 }

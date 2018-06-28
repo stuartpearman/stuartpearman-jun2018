@@ -12,6 +12,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
+    "ngrok": "^3.0.1",
     "prettier": "^1.13.5",
     "react-redux": "5.0.5",
     "redux": "3.6.0"

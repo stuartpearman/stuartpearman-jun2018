@@ -1,8 +1,9 @@
 .site-header {
   padding: 30px 15px 15px;
   position: fixed;
-  background: linear-gradient(0deg, transparent 1%, rgba(255,255,255,0.7), #fff 90%);
-  height: 120px;
+  background: linear-gradient(0deg, rgba(255,255,255,0.6), rgba(255,255,255,0.98), #fff 90%);
+  height: 100px;
+  left: 0;
 
   @media (max-width: $screen-sm) {
     z-index: 10;
@@ -13,8 +14,9 @@
 
   @media (min-width: $screen-sm) {
     float: left;
-    width: 320px;
+    width: 37%;
     padding: 30px 0 10px;
+    background: none;
   }
 }
 
@@ -29,20 +31,34 @@
   @media (min-width: $screen-sm) {
     display: block;
     padding: $nav-link-padding;
+    width: 320px;
+    margin: 0 auto;
   }
 
   h2 {
     margin: 0;
-    line-height: 36px;
-    font-size: 1.85em;
+    // line-height: 36px;
+    // font-size: 1.85em;
+    font-family: $headings-font;
+    color: rgba(0,0,0,0.9);
+    font-size: 24px;
+    width: 185px;
+    padding: 6px 10px;
+
+    line-height: 1.2;
+    border: 2px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
 
     @media (min-width: $screen-xs) {
-      font-size: 2em;
+      // font-size: 2em;
     }
 
     @media (min-width: $screen-sm) {
-      line-height: 72px;
-      font-size: 2.25em;
+      line-height: 1.2;
+      width: 158px;
+      padding: 15px;
+      font-size: 1.75em;
+      // border: 3px solid rgba(0,0,0,0.5);
     }
   }
 
@@ -51,9 +67,12 @@
   }
 }
 
-.site-header-brand:hover {
-  // background: lighten($hover-color, 4%);
-  &:after {
-    background: lighten($brand6-1, 4%);
-  }
-}
+// .site-header-brand:hover {
+//   // background: lighten($hover-color, 4%);
+//   border-left: 10px solid rgba(0,0,0,0.5);
+//   margin-left: -10px;
+//   &:after {
+//     background: rgba(255,255,255,0.3);
+//     // background: lighten($brand6-1, 4%);
+//   }
+// }

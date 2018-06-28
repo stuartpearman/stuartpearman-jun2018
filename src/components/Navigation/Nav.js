@@ -13,9 +13,11 @@ const Navigation = ({ closeNav, isOpen }) => (
       <button className="nav-exit" onClick={closeNav}>Back</button>
     </div>
     <ul className="nav-items">
-      <NavItem dest="/styleguide/">Styleguide</NavItem>
-      <NavItem dest="/count/">Redux Example</NavItem>
+      <NavItem dest="/">Home</NavItem>
+      <NavItem dest="/process/">Process</NavItem>
+      <NavItem dest="/work/">Case Studies</NavItem>
       <NavItem dest="/blog/">Blog</NavItem>
+
     </ul>
   </nav>
 )

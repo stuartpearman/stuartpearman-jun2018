@@ -1,12 +1,30 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { navigateTo } from 'gatsby-link'
+import { connect } from 'react-redux'
 
-const NavItem = ({ dest, children }) => (
-  <li className="nav-item">
-    <Link to={dest} className="nav-link">
-      {children}
-    </Link>
-  </li>
-)
+import { closeNav } from '../../state/actions/navigation'
 
-export default NavItem
+const NavItem = ({ dest, children, dispatchCloseNav }) => {
+  const clickHandler = (e) => {
+    e.preventDefault()
+    navigateTo(dest)
+    dispatchCloseNav()
+  }
+
+  return (
+    <li className="nav-item">
+      <a href={dest} onClick={clickHandler} className="nav-link">
+        {children}
+      </a>
+    </li>
+  )
+}
+
+const mapDispatchToProps = dispatch => ({
+  dispatchCloseNav: () => dispatch(closeNav())
+})
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(NavItem)
