@@ -63,13 +63,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-top: 1.25em;
   margin-bottom: 0.5em;
+  line-height: 1.4;
 }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1.125em; }
+h1 { font-size: 2.2em; }
+h2 { font-size: 1.8em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
 h6 { font-size: 1em; }
 
 // REVISIT - section, article scope too broad?
@@ -172,6 +173,7 @@ pre {
       background: linear-gradient(50deg, #dddddd 0%, #ffffff); // black & white
       background: linear-gradient(50deg, hsl(175, 70%, 88%) 0%, #fcfcf8); // light blue
       background: linear-gradient(50deg, hsla(53, 100%, 83%, 1) 0%, #fcf8fa); // yellow
+      background: linear-gradient(50deg, #ffbd85 0%, #f7a4a4);
       background: linear-gradient(50deg, #fff5a8 0%, hsla(0, 55%, 97%, 1)); // more saturation
       // box-shadow: -10px 0px 15px -10px rgba(0,0,0,0.11) inset;
       left: 0;
@@ -179,4 +181,10 @@ pre {
       z-index: 2;
       opacity: 0.85;
   }
+}
+
+footer {
+  @extend section;
+  padding-bottom: 60px;
+  border-top: 1px dashed #ccc;
 }

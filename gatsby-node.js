@@ -49,3 +49,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     })
   })
 }
+
+exports.modifyWebpackConfig = ({ config }) => {
+  return config.merge({
+    resolve: {
+      root: path.resolve(config._config.context, 'src'),
+    },
+  });
+};

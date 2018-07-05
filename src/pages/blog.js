@@ -9,11 +9,11 @@ export default ({ data }) => {
       <h2>
         <Link to={post.fields.slug}>{post.frontmatter.title}</Link>
       </h2>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div className="blog-excerpt" dangerouslySetInnerHTML={{ __html: post.html }} />
     </article>
   ))
 
-  return <section className="blog-feed">{posts}</section>
+  return <section className="content-section blog-feed">{posts}</section>
 }
 
 export const query = graphql`

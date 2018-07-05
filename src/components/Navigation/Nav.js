@@ -14,7 +14,6 @@ const Navigation = ({ closeNav, isOpen }) => (
     </div>
     <ul className="nav-items">
       <NavItem dest="/">Home</NavItem>
-      <NavItem dest="/process/">Process</NavItem>
       <NavItem dest="/work/">Case Studies</NavItem>
       <NavItem dest="/blog/">Blog</NavItem>
 

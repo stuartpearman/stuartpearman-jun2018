@@ -3,19 +3,25 @@
   "private": true,
   "description": "Gatsby example site that shows use of redux.",
   "version": "1.0.0",
-  "author": "Scotty Eckenthal <scott.eckenthal@gmail.com>",
+  "author": "Stuart Pearman",
   "dependencies": {
+    "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.9.1",
-    "gatsby": "latest",
-    "gatsby-link": "latest",
-    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby": "^1.9.223",
+    "gatsby-link": "^1.6.38",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "1.0.19",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-remark": "^1.7.44",
     "ngrok": "^3.0.1",
+    "node-sass": "^4.9.0",
     "prettier": "^1.13.5",
+    "react-helmet": "^5.2.0",
     "react-redux": "5.0.5",
-    "redux": "3.6.0"
+    "redux": "3.6.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0"
   },
   "keywords": [
     "gatsby"

@@ -1,0 +1,14 @@
+.content-section {
+  section, article {
+    padding: 30px 0;
+    border-bottom: 1px dashed #ccc;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

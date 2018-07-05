@@ -2,16 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { connect } from 'react-redux'
+import { Helmet } from "react-helmet";
+
 
 import { toggleNav } from '../state/actions/navigation'
 
 import Navigation from '../components/Navigation/Nav'
 import backdropImage from '../assets/images/stu-rialto.jpg'
 
-import '../assets/stylesheets/__all.scss'
+import 'assets/stylesheets/application.scss'
 
 const DefaultLayout = ({ children, toggleNav, navIsOpen }) => (
   <div className="container">
+    <Helmet>
+      {
+        //<link rel="stylesheet" type="text/css" href="/styles.css" />
+      }
+    </Helmet>
     <header className="site-header">
       <Link to="/" className="site-header-brand">
         <h2>Stuart Pearman</h2>
